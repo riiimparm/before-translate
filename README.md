@@ -27,7 +27,7 @@ BeforeTranslate使用
 
 リポジトリをクローン 
 ```bash
-git clone https://github.com/riiim400th/before-translate.git
+git clone https://github.com/riiimparm/before-translate.git
 ```
 
 `chrome://extensions/` からデベロッパモードをON
