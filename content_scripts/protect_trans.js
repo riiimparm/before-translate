@@ -31,6 +31,15 @@
 
     if (onlyAnchors) {
       li.setAttribute('translate', 'no');
+      return;
+    }
+
+    // Protect <li> whose entire content is a single word with no child elements
+    if (li.children.length === 0) {
+      const text = (li.textContent || '').trim();
+      if (text !== '' && !/\s/.test(text)) {
+        li.setAttribute('translate', 'no');
+      }
     }
   }
 
